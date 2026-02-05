@@ -1,0 +1,52 @@
+[tool.pytest.ini_options]
+addopts = "-ra -q"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+
+# Register all markers used across the suite
+markers = [
+  "calculator: Windows Calculator tests",
+  "basic: Basic arithmetic operations",
+  "addition: Tests for addition",
+  "subtraction: Tests for subtraction",
+  "multiplication: Tests for multiplication",
+  "division: Tests for division",
+
+  "expression: Expression parsing to key presses",
+  "sequence: Explicit key sequence execution",
+
+  "navigation: Hamburger menu navigation",
+  "history: History panel validations",
+  "settings: Settings screen validations",
+
+  "decimal: Decimal number behaviors",
+  "negative: Negative number behaviors",
+  "error: Error-state validations (e.g., divide by zero)",
+
+  "unary: Unary operations (sqrt, square, reciprocal, negate)",
+  "input: Input quirks (backspace, clear, leading zeros, decimal key rules)",
+  "percent: Percent behaviors with +, -, *",
+
+  "equals: Repeated equals / evaluation rules",
+  "immediate_execution: Standard mode immediate execution order",
+
+  "leading_zeros: Leading zero entry behavior",
+  "ce: Clear Entry behavior",
+  "c: Clear All behavior",
+
+  "memory: Memory operations",
+  "ms: Memory Store",
+  "mr: Memory Recall",
+  "mc: Memory Clear",
+  "mplus: Memory Add",
+  "mminus: Memory Subtract",
+
+  # NEW markers for high-level test grouping
+  "smoke: Quick smoke tests",
+  "regression: Full regression tests",
+  "export: Export-related tests",
+  "filters: Filter-related tests",
+  "ui: UI validation tests",
+  "performance: Performance tests"
+]
