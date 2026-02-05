@@ -1,0 +1,176 @@
+{
+  "app": {
+    "title": "HP Energy Consumption",
+    "mainWindow": {
+      "by": "name",
+      "value": "HP Energy Consumption"
+    }
+  },
+  "locators": {
+    "nav": {
+      "energy_consumption_tab": {
+        "by": "accessibility_id",
+        "value": "NavEnergyConsumption"
+      },
+      "dashboard_tab": {
+        "by": "accessibility_id",
+        "value": "NavDashboard"
+      },
+      "settings_tab": {
+        "by": "accessibility_id",
+        "value": "NavSettings"
+      }
+    },
+    "energy_consumption": {
+      "page_header": {
+        "by": "accessibility_id",
+        "value": "EnergyConsumptionHeader"
+      },
+      "summary_total_kwh": {
+        "by": "accessibility_id",
+        "value": "TotalConsumptionValue"
+      },
+      "summary_cost": {
+        "by": "accessibility_id",
+        "value": "TotalCostValue"
+      },
+      "chart_container": {
+        "by": "accessibility_id",
+        "value": "ConsumptionChart"
+      },
+      "chart_type_dropdown": {
+        "by": "accessibility_id",
+        "value": "ChartTypeDropdown"
+      },
+      "chart_type_line": {
+        "by": "name",
+        "value": "Line"
+      },
+      "chart_type_bar": {
+        "by": "name",
+        "value": "Bar"
+      },
+      "chart_type_area": {
+        "by": "name",
+        "value": "Area"
+      },
+      "unit_toggle": {
+        "by": "accessibility_id",
+        "value": "UnitToggle"
+      },
+      "unit_kwh": {
+        "by": "name",
+        "value": "kWh"
+      },
+      "unit_wh": {
+        "by": "name",
+        "value": "Wh"
+      },
+      "period_dropdown": {
+        "by": "accessibility_id",
+        "value": "PeriodDropdown"
+      },
+      "period_today": {
+        "by": "name",
+        "value": "Today"
+      },
+      "period_week": {
+        "by": "name",
+        "value": "This Week"
+      },
+      "period_month": {
+        "by": "name",
+        "value": "This Month"
+      },
+      "period_year": {
+        "by": "name",
+        "value": "This Year"
+      },
+      "period_custom": {
+        "by": "name",
+        "value": "Custom"
+      },
+      "custom_from_date": {
+        "by": "accessibility_id",
+        "value": "CustomFromDate"
+      },
+      "custom_to_date": {
+        "by": "accessibility_id",
+        "value": "CustomToDate"
+      },
+      "apply_filters_btn": {
+        "by": "accessibility_id",
+        "value": "ApplyFilters"
+      },
+      "reset_filters_btn": {
+        "by": "accessibility_id",
+        "value": "ResetFilters"
+      },
+      "device_filter_dropdown": {
+        "by": "accessibility_id",
+        "value": "DeviceFilterDropdown"
+      },
+      "device_all": {
+        "by": "name",
+        "value": "All devices"
+      },
+      "export_btn": {
+        "by": "accessibility_id",
+        "value": "ExportButton"
+      },
+      "export_csv": {
+        "by": "name",
+        "value": "CSV"
+      },
+      "export_pdf": {
+        "by": "name",
+        "value": "PDF"
+      },
+      "export_xlsx": {
+        "by": "name",
+        "value": "XLSX"
+      },
+      "toast_message": {
+        "by": "accessibility_id",
+        "value": "ToastMessage"
+      },
+      "error_banner": {
+        "by": "accessibility_id",
+        "value": "ErrorBanner"
+      }
+    }
+  },
+  "testdata": {
+    "valid_custom_ranges": [
+      {
+        "from": "2026-01-01",
+        "to": "2026-01-07"
+      },
+      {
+        "from": "2026-01-15",
+        "to": "2026-01-31"
+      }
+    ],
+    "invalid_custom_ranges": [
+      {
+        "from": "2026-02-10",
+        "to": "2026-02-01"
+      },
+      {
+        "from": "",
+        "to": "2026-02-01"
+      },
+      {
+        "from": "2026-02-01",
+        "to": ""
+      }
+    ],
+    "devices": [
+      "All devices",
+      "Laptop",
+      "Monitor",
+      "Printer",
+      "Dock"
+    ]
+  }
+}

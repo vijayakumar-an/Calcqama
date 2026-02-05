@@ -1,0 +1,18 @@
+winappdriver:
+  server_url: "http://127.0.0.1:4723"
+  platformName: "Windows"
+  deviceName: "WindowsPC"
+
+modules:
+  calculator:
+    app:
+      app_id: "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"
+    winappdriver:
+      server_url: "http://127.0.0.1:4723"  # optional
+      deviceName: "WindowsPC"              # optional
+      platformName: "Windows"              # optional
+    timeouts:
+      implicit_wait_sec: 2
+      new_command_timeout_sec: 120
+    resources:
+      ui_map: "resources/ui_map/windows/calculator.json"

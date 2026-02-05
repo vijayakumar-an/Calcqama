@@ -1,0 +1,76 @@
+{
+  "app": {
+    "title": "Calculator",
+    "mainWindow": {
+      "by": "name",
+      "value": "Calculator"
+    }
+  },
+  "locators": {
+    "buttons": {
+      "num_0": { "locator": { "AutomationID": "num0Button" } },
+      "num_1": { "locator": { "AutomationID": "num1Button" } },
+      "num_2": { "locator": { "AutomationID": "num2Button" } },
+      "num_3": { "locator": { "AutomationID": "num3Button" } },
+      "num_4": { "locator": { "AutomationID": "num4Button" } },
+      "num_5": { "locator": { "AutomationID": "num5Button" } },
+      "num_6": { "locator": { "AutomationID": "num6Button" } },
+      "num_7": { "locator": { "AutomationID": "num7Button" } },
+      "num_8": { "locator": { "AutomationID": "num8Button" } },
+      "num_9": { "locator": { "AutomationID": "num9Button" } },
+
+      "plus":     { "locator": { "AutomationID": "plusButton" } },
+      "minus":    { "locator": { "AutomationID": "minusButton" } },
+      "multiply": { "locator": { "AutomationID": "multiplyButton" } },
+      "divide":   { "locator": { "AutomationID": "divideButton" } },
+      "equals":   { "locator": { "AutomationID": "equalButton" } },
+
+      "backspace":       { "locator": { "AutomationID": "backSpaceButton" } },
+      "clear":           { "locator": { "AutomationID": "clearButton" } },
+      "clear_entry":     { "locator": { "AutomationID": "clearEntryButton" } },
+      "decimal_separator": { "locator": { "AutomationID": "decimalSeparatorButton" } },
+
+      "percent":    { "locator": { "AutomationID": "percentButton" } },
+      "negate":     { "locator": { "AutomationID": "negateButton" } },
+      "square":     { "locator": { "AutomationID": "xpower2Button" } },
+      "sqrt":       { "locator": { "AutomationID": "squareRootButton" } },
+      "reciprocal": { "locator": { "AutomationID": "inverseButton" } },
+
+      "mem_clear":     { "locator": { "AutomationID": "memClearButton" } },
+      "mem_recall":    { "locator": { "AutomationID": "memRecallButton" } },
+      "mem_add":       { "locator": { "AutomationID": "memAddButton" } },
+      "mem_subtract":  { "locator": { "AutomationID": "memSubtractButton" } },
+      "mem_store":     { "locator": { "AutomationID": "memStoreButton" } }
+    },
+
+    "display": {
+      "result_text": { "locator": { "AutomationID": "CalculatorResults" } }
+    },
+
+    "nav": {
+      "menu":               { "locator": { "AutomationID": "TogglePaneButton" } },
+      "history":            { "locator": { "AutomationID": "HistoryButton" } },
+      "menu_item_standard": { "locator": { "name": "Standard" } },
+      "menu_item_settings": { "locator": { "name": "Settings" } }
+    },
+
+    "history": {
+      "empty_text": { "locator": { "name": "There's no history yet." } }
+    },
+
+    "settings": {
+      "header":         { "locator": { "name": "Settings" } },
+      "theme_expander": { "locator": { "name": "App theme" } },
+      "theme_light":    { "locator": { "name": "Light" } },
+      "theme_dark":     { "locator": { "name": "Dark" } },
+      "theme_system":   { "locator": { "name": "Use system setting" } },
+      "about_expander": { "locator": { "name": "About" } }
+    }
+  },
+  "testdata": {
+    "samples": [
+      { "a": 12, "op": "plus", "b": 30, "expected": "42" },
+      { "a": 84, "op": "divide", "b": 2, "expected": "42" }
+    ]
+  }
+}

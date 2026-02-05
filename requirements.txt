@@ -1,0 +1,5 @@
+# Core test stack
+pytest
+selenium
+Appium-Python-Client
+pyyaml
