@@ -1,0 +1,101 @@
+{
+  "app": {
+    "title": "Microsoft To Do",
+    "mainWindow": {
+      "by": "name",
+      "value": "Microsoft To Do"
+    }
+  },
+  "locators": {
+
+    "common": {
+      "Search_btn": {
+        "by": "name",
+        "value": "Search your tasks"
+      }
+    },
+
+    "display": {
+      "maximize_btn": {
+        "by": "accessibility id",
+        "value": "Maximize"
+      },
+      "minimize_btn": {
+        "by": "accessibility id",
+        "value": "Minimize"
+      },
+      "close_btn": {
+        "by": "accessibility id",
+        "value": "Close"
+      }
+    },
+
+    "menus": {
+      "My_day_menu": {
+        "by": "name",
+        "value": "My Day, 1 uncompleted tasks, more options available"
+      },
+      "important_menu": {
+        "by": "accessibility id",
+        "value": "TextBox"
+      },
+      "Assigned_to_me_menu": {
+        "by": "name",
+        "value": "Assigned to me, more options available"
+      },
+      "Flagged_email_menu": {
+        "by": "name",
+        "value": "Flagged email, more options available"
+      },
+      "planned_menu": {
+        "by": "name",
+        "value": "Planned, 2 uncompleted tasks, more options available"
+
+      },
+      "tasks_menu": {
+        "by": "name",
+        "value": "Tasks, more options available"
+      }
+    },
+
+    "MyDay_menu": {
+      "keep_on_top_btn": {
+        "by": "accessibility id",
+        "value": "AlwaysOnTopButton"
+      },
+      "back_to_fullview_btn": {
+        "by": "accessibility id",
+        "value": "AlwaysOnTopButton"
+      },
+      "suggestions_btn": {
+        "by": "accessibility id",
+        "value": "OpenSuggestionsButton"
+      },
+      "add_task_btn": {
+        "by": "name",
+        "value": "Add a task in “My Day”"
+
+      },
+      "view_task_details": {
+        "by": "name",
+        "value": "Task submit report today, Due Today, in Tasks., more options available"
+      }
+    },
+
+    "profile": {
+      "profile_btn": {
+        "by": "name",
+        "value": "User menu."
+      },
+      "manage_acc": {
+        "by": "name",
+        "value": "Manage accounts"
+      },
+      "settings": {
+        "by": "name",
+        "value": "Settings"
+      }
+    }
+
+  }
+}

@@ -178,3 +178,44 @@ def calc_app(calc_driver, calculator_ui_map):
 def calc(calc_app):
     """High-level CalculatorFlows for test steps."""
     return CalculatorFlows(calc_app)
+
+
+
+
+# for microsoft todo
+
+@pytest.fixture(scope="function")
+def todo_driver(config):
+    from libs.drivers.app_session import start_app, safe_quit
+
+    drv = None
+    try:
+        drv = start_app(config, "microsoft_todo")
+        yield drv
+    finally:
+        safe_quit(drv)
+
+
+@pytest.fixture(scope="function")
+def todo_ui_map(config):
+    path_str = config["modules"]["microsoft_todo"]["resources"]["ui_map"]
+    path = Path(path_str)
+    # Fix path resolution (same logic as calculator_ui_map)
+    if not path.is_absolute():
+        repo_root = Path(__file__).resolve().parents[1]
+        path = (repo_root / path).resolve()
+    data = _load_json_file(path)
+    return data.get("locators", data)
+
+
+
+@pytest.fixture(scope="function")
+def todo_app(todo_driver, todo_ui_map):
+    from libs.drivers.app_session import AppSession
+    return AppSession(todo_driver, todo_ui_map)
+
+
+@pytest.fixture(scope="function")
+def todo(todo_app):
+    from libs.flows.windows.microsoft_todo import MicrosoftToDoFlows
+    return MicrosoftToDoFlows(todo_app)
