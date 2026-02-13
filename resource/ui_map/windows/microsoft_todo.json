@@ -32,29 +32,29 @@
 
     "menus": {
       "My_day_menu": {
-        "by": "name",
-        "value": "My Day, 1 uncompleted tasks, more options available"
+        "by": "xpath",
+        "value": "//ListItem[contains(@Name,'My Day')]"
       },
       "important_menu": {
-        "by": "accessibility id",
-        "value": "TextBox"
+        "by": "xpath",
+        "value": "//ListItem[contains(@Name,'Important')]"
       },
       "Assigned_to_me_menu": {
-        "by": "name",
-        "value": "Assigned to me, more options available"
+        "by": "xpath",
+        "value": "//ListItem[contains(@Name,'Assigned to me')]"
       },
       "Flagged_email_menu": {
-        "by": "name",
-        "value": "Flagged email, more options available"
+        "by": "xpath",
+        "value": "//ListItem[contains(@Name,'Flagged email')]"
       },
       "planned_menu": {
-        "by": "name",
-        "value": "Planned, 2 uncompleted tasks, more options available"
+        "by": "xpath",
+        "value": "//ListItem[contains(@Name,'Planned')]"
 
       },
       "tasks_menu": {
-        "by": "name",
-        "value": "Tasks, more options available"
+        "by": "xpath",
+        "value": "//ListItem[contains(@Name,'Tasks')]"
       }
     },
 

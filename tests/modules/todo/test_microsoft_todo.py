@@ -9,9 +9,7 @@ class TestMicrosoftToDo:
         1. Launch Microsoft To Do
         2. Verify Add Task button is visible (My Day is default)
         """
-
         # No need to click My Day (default page)
-
         assert todo.app.exists_in("MyDay_menu", "add_task_btn", timeout=5), \
             "Add Task button not visible in My Day"
 
