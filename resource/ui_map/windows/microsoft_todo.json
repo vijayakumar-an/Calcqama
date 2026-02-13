@@ -74,12 +74,20 @@
       "add_task_btn": {
         "by": "name",
         "value": "Add a task in “My Day”"
-
       },
       "view_task_details": {
         "by": "name",
         "value": "Task submit report today, Due Today, in Tasks., more options available"
+      },
+      "Created_Task": {
+        "by": "xpath",
+        "value": "//List[@Name='Tasks']//ListItem[contains(@Name,'Task today i will submit')]"
+      },
+      "Dismiss_Detail_View_Button": {
+        "by": "name",
+        "value": "Dismiss detail view"
       }
+
     },
 
     "profile": {
@@ -95,6 +103,40 @@
         "by": "name",
         "value": "Settings"
       }
+    },
+
+    "New_List": {
+      "New_List_Button": {
+        "by": "accessibility id",
+        "value": "AddListButton"
+      },
+      "Last_Created_List": {
+        "by": "xpath",
+        "value": "(//List[@Name='Lists']//ListItem)[last()]"
+      },
+      "Add_Task_Textbox": {
+        "by": "accessibility id",
+        "value": "TextBox"
+      },
+      "Edit_Task_TextBox": {
+        "by": "xpath",
+        "value": "//Edit[@AutomationId='TextBox']"
+      },
+      "Print_List_MenuItem": {
+        "by": "name",
+        "value": "Print list"
+      },
+      "Delete_List_MenuItem": {
+        "by": "xpath",
+        "value": "//MenuItem[@Name='Delete list']"
+      }
+
+
+
+
+
+
+
     }
 
   }
