@@ -107,16 +107,16 @@
 
     "New_List": {
       "New_List_Button": {
-        "by": "accessibility id",
-        "value": "AddListButton"
+        "by": "xpath",
+        "value": "//*[@AutomationId='AddListButton']"
       },
       "Last_Created_List": {
         "by": "xpath",
         "value": "(//List[@Name='Lists']//ListItem)[last()]"
       },
-      "Add_Task_Textbox": {
-        "by": "accessibility id",
-        "value": "TextBox"
+     "Add_Task_Textbox": {
+        "by": "xpath",
+        "value": "//*[@AutomationId='TextBox']"
       },
       "Edit_Task_TextBox": {
         "by": "xpath",

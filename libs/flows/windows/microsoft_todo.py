@@ -66,10 +66,10 @@ class MicrosoftToDoFlows:
         self.app.click_in("MyDay_menu", "view_task_details")
 
     def verify_created_task_visible(self):
-    return self.app.exists_in("MyDay_menu", "Created_Task", timeout=5)
+        return self.app.exists_in("MyDay_menu", "Created_Task", timeout=5)
 
     def dismiss_detail_view(self):
-    self.app.click_in("MyDay_menu", "Dismiss_Detail_View_Button")
+        self.app.click_in("MyDay_menu", "Dismiss_Detail_View_Button")
 
 
     # =============================
@@ -96,25 +96,25 @@ class MicrosoftToDoFlows:
 
 
     def create_new_list(self):
-    self.app.click_in("New_List", "New_List_Button")
+        self.app.click_in("New_List", "New_List_Button")
 
     def verify_last_created_list(self):
-    return self.app.exists_in("New_List", "Last_Created_List", timeout=5)
+        return self.app.exists_in("New_List", "Last_Created_List", timeout=5)
 
     def add_task_to_current_list(self, task_name: str):
-    self.app.click_in("New_List", "Add_Task_Textbox")
-    self.app.driver.switch_to.active_element.send_keys(task_name)
-    from selenium.webdriver.common.keys import Keys
-    self.app.driver.switch_to.active_element.send_keys(Keys.ENTER)
+        self.app.click_in("New_List", "Add_Task_Textbox")
+        self.app.driver.switch_to.active_element.send_keys(task_name)
+        from selenium.webdriver.common.keys import Keys
+        self.app.driver.switch_to.active_element.send_keys(Keys.ENTER)
 
     def edit_task(self, new_text: str):
-    self.app.click_in("New_List", "Edit_Task_TextBox")
-    elem = self.app.driver.switch_to.active_element
-    elem.clear()
-    elem.send_keys(new_text)
+        self.app.click_in("New_List", "Edit_Task_TextBox")
+        elem = self.app.driver.switch_to.active_element
+        elem.clear()
+        elem.send_keys(new_text)
 
     def print_list(self):
-    self.app.click_in("New_List", "Print_List_MenuItem")
+        self.app.click_in("New_List", "Print_List_MenuItem")
 
     def delete_list(self):
-    self.app.click_in("New_List", "Delete_List_MenuItem")
+        self.app.click_in("New_List", "Delete_List_MenuItem")
